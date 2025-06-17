@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Terminator 2",
+        "img": "Imagen_01"
+    },
+    {
+        "id": 2,
+        "name": "The Shawshank Redemption",
+        "img": "Imagen_02"
+    },
+    {
+        "id": 3,
+        "name": "Schindler's List",
+        "img": "Imagen_03"
+    },
+    {
+        "id": 4,
+        "name": "Pulp Fiction",
+        "img": "Imagen_04"
+    },
+    {
+        "id": 5,
+        "name": "12 Angry Men",
+        "img": "Imagen_05"
+    },
+    {
+        "id": 6,
+        "name": "Fight Club",
+        "img": "Imagen_06"
+    },
+    {
+        "id": 7,
+        "name": "Lord of the Rings: Fellowship of the Ring",
+        "img": "Imagen_07"
+    },
+    {
+        "id": 8,
+        "name": "Seven Samurai",
+        "img": "Imagen_08"
+    },
+    {
+        "id": 9,
+        "name": "The Art of Fighting",
+        "img": "Imagen_09"
+    },
+    {
+        "id": 10,
+        "name": "Kung Fu Hustle",
+        "img": "Imagen_10"
+    },
+    {
+        "id": 11,
+        "name": "9 Reinas",
+        "img": "Imagen_11"
+    },
+    {
+        "id": 12,
+        "name": "Eternal Sunshine of the Spotless Mind",
+        "img": "Imagen_12"
+    }
+]
