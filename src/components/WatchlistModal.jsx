@@ -1,29 +1,31 @@
-function WatchlistModal({ isModalOpen, setIsModalOpen, watchlist, setWachlist }) {
+import EmptyCard from "./EmptyCard"
+import WatchlistCard from "./WatchlistCard"
+
+function WatchlistModal({ isModalOpen, setIsModalOpen, watchlist, setWatchlist }) {
 
     const handleCloseModal = () => setIsModalOpen(false)
     if (!isModalOpen) return null
 
     return (
-        <div>
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
+            <div className="bg-white rounded-lg shadow-lg p-6 w-11/14 max-w-md relative">
             <button 
             onClick={ handleCloseModal }
-            className="bg-red-500 text-white rounded px-2 py-1">
+            className="bg-red-500 hover:bg-red-600 hover:cursor-pointer text-white rounded px-2 py-1 absolute top-2 right-2">
                 Close
             </button>
             {
                 watchlist.length > 0 ? (
                     <ul className="mt-4">
                     {watchlist.map((movie) => (
-                        <li key={movie.id} className="bg-gray-800 p-2 rounded mb-2">
-                            <img src={`/assets/imgMovies/${movie.img}.jpg`} className='w-16 h-16 inline-block mr-2' alt={movie.img}/>
-                            <span className="text-white">{movie.name}</span>
-                        </li>
+                        <WatchlistCard key={movie.id} movie={movie} watchlist={watchlist} setWatchlist={setWatchlist}/>
                     ))}
                     </ul>
                 ) : (
-                    <p>empty</p>
+                    <EmptyCard /> 
                 )
             }
+            </div>
         </div>
     )
 }
